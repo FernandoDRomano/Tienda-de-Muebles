@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"estilos.css"}
+{"version":3,"sourceRoot":"","sources":["estilos.scss"],"names":[],"mappings":"AAAA;AAAA;AAAA;AASA;AAAA;AAAA;AAOY;EACI,OAXR;EAYQ;EACA;EACA;;AAGJ;EACI,OApBN;EAqBM;;AAIZ;EACI;;;AAIR;AAAA;AAAA;AAKI;EACI;;;AAIR;AAAA;AAAA;AAKI;EACI;;AAEJ;EACI;;AAGA;EACI;EACA;;AAEJ;EACI;EACA;;;AAKZ;AAAA;AAAA;AAKI;EACI;;AACA;EACI;EACA;EACA;;AACA;EACI,OA3EN;EA4EM;;;AAMhB;AAAA;AAAA;AAIA;EAEQ;IACI","file":"estilos.css"}

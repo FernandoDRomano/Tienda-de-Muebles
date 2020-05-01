@@ -1,0 +1,97 @@
+/*
+    1. CONFIGURACIONES INICIALES
+*/
+
+$primary: #037BC0;
+$secondary: #8cbc00;
+$texto: #212529;
+
+//body{ height: 5000px;}
+/*
+    2. ESTILOS A #menuSuperior
+*/
+
+#menuSuperior{
+    #menuPrincipal{
+        .menu{
+            li a{
+                color: $texto;
+                text-decoration: none;
+                font-weight: normal;
+                transition: all ease .3s;
+            }
+
+            li:hover a{
+                color: $primary;
+                font-weight: bold;
+            }
+        }
+    }
+    #hero{
+        height: 35rem;
+    }
+}
+
+/*
+    3. ESTILOS A #sobreNosotros
+*/
+
+#sobreNosotros{
+    .imagen{
+        height: 28rem;
+    }
+}
+
+/*
+    4. ESTILOS A #productos
+*/
+
+#productos{
+    .card-producto{
+        transition: all .4s ease;
+    }
+    .card-producto:hover{
+        transform: scale(1.04);
+    }
+    .cuerpo{
+        .titulo{
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        .precio{
+            font-weight: lighter;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+/*
+    5. ESTILOS A #pieDePagina
+*/
+
+#pieDePagina{
+    li{
+        padding: .3rem 0;
+        a{
+            text-decoration: none;
+            color: lighten($texto, 25%);
+            transition: all ease .3s;
+            &:hover{
+                color: $primary;
+                font-weight: bold;;
+            }
+        }
+    }
+}
+
+/*
+    X. MEDIAS QUERYS
+*/
+
+@media(min-width:768px){
+    #sobreNosotros{
+        .imagen{
+            height: 35rem;
+        }
+    }
+}

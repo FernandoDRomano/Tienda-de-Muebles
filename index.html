@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- CARGANDO FUENTES DE GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap" rel="stylesheet">
     <!-- CARGANDO BOOTSTRAP 4 -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <!-- CARGANDO FONT AWESOME - PARA LOS ICONOS-->
@@ -18,11 +18,226 @@
     <link rel="stylesheet" href="css/universal-parallax.css">
     <!-- CARGANDO ESTILOS PROPIOS -->
     <link rel="stylesheet" href="css/estilos.css">
-    <title>Plantilla Bootstrap 4 - Librerias</title>
+    <title>Tienda de Muebles</title>
   </head>
   
   <body>
     
+    <!-- LOGO Y MENU DE NAVEGACIÓN -->
+    <header id="menuSuperior">
+      <div id="logo" class="container-fluid border-bottom">
+        <div class="row justify-content-center text-center">
+          <div class="col-12 pt-5 pb-3">
+            <h1 class="font-weight-bold">Tienda<span class="text-primary">Muebles</span></h1>
+          </div>
+        </div>
+      </div>
+      <div id="menuPrincipal" class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-md navbar-light ">
+              <button class="navbar-toggler d-md-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                  aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="menu list-unstyled mb-0 text-center d-md-flex w-100 justify-content-between">
+                  <li class="py-2 px-1"><a href="#">Inicio</a></li>
+                  <li class="py-2 px-1"><a href="#">Nosotros</a></li>
+                  <li class="py-2 px-1"><a href="#">Tienda</a></li>
+                  <li class="py-2 px-1"><a href="#">Blog</a></li>
+                  <li class="py-2 px-1"><a href="#">Galería</a></li>
+                  <li class="py-2 px-1"><a href="#">Contacto</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div id="hero">
+        <div class="parallax" data-parallax-image="images/principal.jpg"></div>
+      </div>
+    </header>
+
+    <!-- CATEGORÍAS -->
+    <section id="categorias" class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h2 class="display-4 font-weight-bold">Categorías</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center align-items-center mt-3">
+          <div class="col-12 col-md-4 text-center">
+            <img src="images/categoria1.jpg" alt="Imagen de la Categoría 1" class="img-fluid">
+            <h3 class="h2 pt-3 font-weight-light">Escritorios</h3>
+          </div>
+          <div class="col-12 col-md-4 text-center">
+            <img src="images/categoria2.jpg" alt="Imagen de la Categoría 2" class="img-fluid">
+            <h3 class="h2 pt-3 font-weight-light">Hogar</h3>
+          </div>
+          <div class="col-12 col-md-4 text-center">
+            <img src="images/categoria3.jpg" alt="Imagen de la Categoría 3" class="img-fluid">
+            <h3 class="h2 pt-3 font-weight-light">Cocina</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE NOSOTROS -->
+    <section id="sobreNosotros">
+      <div class="container-fluid h-100">
+        <div class="row h-100">
+          <div class="col-12 col-md-6 imagen order-2 order-md-1">
+            <div class="parallax" data-parallax-image="images/nosotros.jpg"></div>
+          </div>
+          <div class="col-12 col-md-6 py-4 bg-primary text-white d-md-flex flex-column justify-content-center align-items-center order-1 order-md-2">
+            <h2 class="display-4 font-weight-bold mb-3">Sobre Nosotros</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa asperiores fugit amet placeat illo, atque delectus cupiditate corporis nulla iste? Corporis quo qui repellat. Temporibus assumenda earum, corporis quisquam impedit dignissimos veniam ut rerum voluptas tenetur. Nulla, minus! Perferendis numquam, veniam maxime optio nisi molestias praesentium eaque fuga quas modi?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, ipsum incidunt. Incidunt nisi officiis aperiam nulla atque adipisci natus ullam.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section id="productos" class="mt-5 mb-3">
+      <div class="container">
+        <div class="row justify-content-center mb-4">
+          <div class="col-12 text-center">
+            <h2 class="display-4 font-weight-bold">Productos</h2>
+          </div>
+        </div>
+        <!-- LISTADO DE PRODUCTOS -->
+        <div class="row justify-content-center">
+
+          <div class="col-12 mb-4 card-producto">
+            <div class="row no-gutters justify-content-center align-items-center h-100 bg-primary">
+              <div class="col-12 col-lg-8 imagen">
+                <img src="images/producto1.jpg" alt="Imagen de producto 1" class="img-fluid">
+              </div>
+              <div class="col-12 col-lg-4 cuerpo text-white text-center p-3">
+                <h3 class="titulo">Producto 1</h3>
+                <p class="mb-0 parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione architecto minus error sed natus </p>
+                <h4 class="precio font-weight-bold mb-0 py-2 py-md-3 py-lg-4">$1,000.00</h4>
+                <a href="#" class="btn btn-secondary btn-block btn-lg text-uppercase text-white">Agregar al carrito</a>
+              </div> 
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 mb-4 card-producto">
+            <div class="row no-gutters justify-content-center align-items-center h-100 bg-primary">
+              <div class="col-12 imagen">
+                <img src="images/producto2.jpg" alt="Imagen de producto 2" class="img-fluid">
+              </div>
+              <div class="col-12 cuerpo text-white text-center p-3">
+                <h3 class="titulo">Producto 2</h3>
+                <p class="mb-0 parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione architecto minus error sed natus </p>
+                <h4 class="precio font-weight-bold mb-0 py-2 py-md-3 py-lg-4">$800.00</h4>
+                <a href="#" class="btn btn-secondary btn-block btn-lg text-uppercase text-white">Agregar al carrito</a>
+              </div> 
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 mb-4 card-producto">
+            <div class="row no-gutters justify-content-center align-items-center h-100 bg-primary">
+              <div class="col-12 imagen">
+                <img src="images/producto3.jpg" alt="Imagen de producto 3" class="img-fluid">
+              </div>
+              <div class="col-12 cuerpo text-white text-center p-3">
+                <h3 class="titulo">Producto 3</h3>
+                <p class="mb-0 parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione architecto minus error sed natus </p>
+                <h4 class="precio font-weight-bold mb-0 py-2 py-md-3 py-lg-4">$900.00</h4>
+                <a href="#" class="btn btn-secondary btn-block btn-lg text-uppercase text-white">Agregar al carrito</a>
+              </div> 
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-4 card-producto">
+            <div class="row no-gutters justify-content-center align-items-center h-100 bg-primary">
+              <div class="col-12 imagen">
+                <img src="images/producto4.jpg" alt="Imagen de producto 4" class="img-fluid">
+              </div>
+              <div class="col-12 cuerpo text-white text-center p-3">
+                <h3 class="titulo">Producto 4</h3>
+                <p class="mb-0 parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione architecto minus error sed natus </p>
+                <h4 class="precio font-weight-bold mb-0 py-2 py-md-3 py-lg-4">$1,000.00</h4>
+                <a href="#" class="btn btn-secondary btn-block btn-lg text-uppercase text-white">Agregar al carrito</a>
+              </div> 
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-4 card-producto">
+            <div class="row no-gutters justify-content-center align-items-center h-100 bg-primary">
+              <div class="col-12 imagen">
+                <img src="images/producto5.jpg" alt="Imagen de producto 5" class="img-fluid">
+              </div>
+              <div class="col-12 cuerpo text-white text-center p-3">
+                <h3 class="titulo">Producto 5</h3>
+                <p class="mb-0 parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione architecto minus error sed natus </p>
+                <h4 class="precio font-weight-bold mb-0 py-2 py-md-3 py-lg-4">$1,000.00</h4>
+                <a href="#" class="btn btn-secondary btn-block btn-lg text-uppercase text-white">Agregar al carrito</a>
+              </div> 
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-4 card-producto">
+            <div class="row no-gutters justify-content-center align-items-center h-100 bg-primary">
+              <div class="col-12 imagen">
+                <img src="images/producto6.jpg" alt="Imagen de producto 6" class="img-fluid">
+              </div>
+              <div class="col-12 cuerpo text-white text-center p-3">
+                <h3 class="titulo">Producto 6</h3>
+                <p class="mb-0 parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione architecto minus error sed natus </p>
+                <h4 class="precio font-weight-bold mb-0 py-2 py-md-3 py-lg-4">$1,000.00</h4>
+                <a href="#" class="btn btn-secondary btn-block btn-lg text-uppercase text-white">Agregar al carrito</a>
+              </div> 
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer id="pieDePagina">
+      <div class="container border-top">
+        <div class="row justify-content-center mt-4">
+
+          <div class="col-12 col-md-4 text-center">
+            <h2>Categorías</h2>
+            <ul class="list-unstyled">
+              <li><a href="#">Carreras</a></li>
+              <li><a href="#">Prensa y Noticias</a></li>
+              <li><a href="#">Asociaciones</a></li>
+              <li><a href="#">Política de Privacidad</a></li>
+              <li><a href="#">Términos de Servicio</a></li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-4 text-center">
+            <h2>Nosotros</h2>
+            <ul class="list-unstyled">
+              <li><a href="#">Misión</a></li>
+              <li><a href="#">Visión</a></li>
+              <li><a href="#">Objetivos</a></li>
+              <li><a href="#">Política de Privacidad</a></li>
+              <li><a href="#">Términos de Servicio</a></li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-4 text-center">
+            <h2>Soporte</h2>
+            <ul class="list-unstyled">
+              <li><a href="#">Preguntas Frecuentes</a></li>
+              <li><a href="#">Ayuda en Línea</a></li>
+              <li><a href="#">Confianza y Seguridad</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </footer>
 
     <!-- CARGANDO JQUERY -->
     <script src="js/jquery-3.4.1.slim.min.js"></script>
